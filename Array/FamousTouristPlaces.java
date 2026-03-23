@@ -39,21 +39,21 @@ class FamousTouristPlaces {
 			t21,t22,t23,t24,t25,t26,t27,t28,t29,t30
 		};
 
-		places[0] = "Updated Taj Mahal";
-		places[1] = "Updated Mysore Palace";
-		places[2] = "Updated Hampi";
-		places[3] = "Updated Goa Beach";
-		places[4] = "Updated Kerala";
-		places[5] = "Updated Charminar";
-		places[6] = "Updated Red Fort";
-		places[7] = "Updated Qutub Minar";
-		places[8] = "Updated India Gate";
-		places[9] = "Updated Golden Temple";
-		places[10] = "Updated Meenakshi";
-		places[11] = "Updated Ooty";
-		places[12] = "Updated Coorg";
-		places[13] = "Updated Manali";
-		places[14] = "Updated Shimla";
+		places[0] = " Taj Mahal";
+		places[1] = " Mysore Palace";
+		places[2] = " Hampi";
+		places[3] = " Goa Beach";
+		places[4] = " Kerala";
+		places[5] = " Charminar";
+		places[6] = " Red Fort";
+		places[7] = " Qutub Minar";
+		places[8] = " India Gate";
+		places[9] = " Golden Temple";
+		places[10] = " Meenakshi";
+		places[11] = " Ooty";
+		places[12] = " Coorg";
+		places[13] = " Manali";
+		places[14] = " Shimla";
 
 		int size = places.length;
 
