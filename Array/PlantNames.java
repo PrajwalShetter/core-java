@@ -34,18 +34,18 @@ class PlantNames {
 			p21,p22,p23,p24,p25
 		};
 
-		plants[0] = "Updated Rose";
-		plants[1] = "Updated Tulip";
-		plants[2] = "Updated Sunflower";
-		plants[3] = "Updated Jasmine";
-		plants[4] = "Updated Lily";
-		plants[5] = "Updated Lotus";
-		plants[6] = "Updated Daisy";
-		plants[7] = "Updated Orchid";
-		plants[8] = "Updated Hibiscus";
-		plants[9] = "Updated Marigold";
-		plants[10] = "Updated Aloe Vera";
-		plants[11] = "Updated Bamboo";
+		plants[0] = " Rose";
+		plants[1] = " Tulip";
+		plants[2] = " Sunflower";
+		plants[3] = " Jasmine";
+		plants[4] = " Lily";
+		plants[5] = " Lotus";
+		plants[6] = " Daisy";
+		plants[7] = " Orchid";
+		plants[8] = " Hibiscus";
+		plants[9] = " Marigold";
+		plants[10] = " Aloe Vera";
+		plants[11] = " Bamboo";
 
 		int size = plants.length;
 
