@@ -35,16 +35,16 @@ class CarModels {
 		};
 
 		
-		cars[0] = "Updated Swift";
-		cars[2] = "Updated Baleno";
-		cars[4] = "Updated Venue";
-		cars[6] = "Updated Amaze";
-		cars[8] = "Updated Innova";
-		cars[10] = "Updated Scorpio";
-		cars[12] = "Updated Nexon";
-		cars[14] = "Updated Safari";
-		cars[16] = "Updated Punch";
-		cars[18] = "Updated Slavia";
+		cars[0] = " Swift";
+		cars[2] = " Baleno";
+		cars[4] = " Venue";
+		cars[6] = " Amaze";
+		cars[8] = " Innova";
+		cars[10] = " Scorpio";
+		cars[12] = " Nexon";
+		cars[14] = " Safari";
+		cars[16] = " Punch";
+		cars[18] = " Slavia";
 
 		int size = cars.length;
 
