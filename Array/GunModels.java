@@ -40,16 +40,16 @@ class GunModels {
 		};
 
 		
-		guns[0] = "Updated AK-47";
-		guns[2] = "Updated Glock";
-		guns[4] = "Updated Uzi";
-		guns[6] = "Updated Beretta";
-		guns[8] = "Updated Remington";
-		guns[10] = "Updated SCAR";
-		guns[12] = "Updated AUG";
-		guns[14] = "Updated RPG";
-		guns[16] = "Updated M249";
-		guns[18] = "Updated Thompson";
+		guns[0] = " AK-47";
+		guns[2] = " Glock";
+		guns[4] = " Uzi";
+		guns[6] = " Beretta";
+		guns[8] = " Remington";
+		guns[10] = " SCAR";
+		guns[12] = " AUG";
+		guns[14] = " RPG";
+		guns[16] = " M249";
+		guns[18] = " Thompson";
 
 		int size = guns.length;
 
