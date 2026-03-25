@@ -12,7 +12,7 @@ class PersonDetails {
 		System.out.println("Mobile :"+mobileNo);
 		System.out.println("PG Address :"+pgAddress);
 		System.out.println("Home Address :"+homeAddress);
-		System.out.println("----------------------------------");
+		System.out.println("/n");
 	}
 }
 
