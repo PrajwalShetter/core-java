@@ -2,83 +2,89 @@ class FlagRunner {
 
 	public static void main(String[] args) {
 
-		Flag f1 = new Flag();
+		
+		Flag indiaFlag = new Flag();
 
-		System.out.println("Default Values: ");
-		System.out.println("Country = " + f1.country + " \n Color = " + f1.color + " \n Stripes = " + f1.stripes
-				+ " \n Symbol = " + f1.hasSymbol + " \n Size = " + f1.size + "\n");
+		System.out.println("Default Values (India Object): ");
+		System.out.println("Country = " + indiaFlag.country + " \n Color = " + indiaFlag.color + " \n Stripes = " + indiaFlag.stripes
+				+ " \n Symbol = " + indiaFlag.hasSymbol + " \n Size = " + indiaFlag.size + "\n");
 
-		f1.country = "India";
-		f1.color = "Tricolor";
-		f1.stripes = 3;
-		f1.hasSymbol = true;
-		f1.size = 1.5;
-		System.out.println("Updated Values:");
-		System.out.println("Country = " + f1.country + " \n Color = " + f1.color + " \n stripes =" + f1.stripes
-				+ "\n Symbol= " + f1.hasSymbol + "\n Size = " + f1.size + "\n");
-
-		Flag f2 = new Flag();
-
-		System.out.println("Default Values: ");
-		System.out.println("Country = " + f2.country + " \n Color = " + f2.color + " \n Stripes = " + f2.stripes
-				+ " \n Symbol = " + f2.hasSymbol + " \n Size = " + f2.size + "\n");
-
-		f2.country = "USA";
-		f2.color = "Red White Blue";
-		f2.stripes = 13;
-		f2.hasSymbol = true;
-		f2.size = 2.0;
+		indiaFlag.country = "India";
+		indiaFlag.color = "Tricolor";
+		indiaFlag.stripes = 3;
+		indiaFlag.hasSymbol = true;
+		indiaFlag.size = 1.5;
 
 		System.out.println("Updated Values:");
-		System.out.println("Country = " + f2.country + " \n Color = " + f2.color + " \n stripes =" + f2.stripes
-				+ "\n Symbol= " + f2.hasSymbol + "\n Size = " + f2.size + "\n");
+		System.out.println("Country = " + indiaFlag.country + " \n Color = " + indiaFlag.color + " \n stripes =" + indiaFlag.stripes
+				+ "\n Symbol= " + indiaFlag.hasSymbol + "\n Size = " + indiaFlag.size + "\n");
 
-		Flag f3 = new Flag();
+		
+		Flag usaFlag = new Flag();
 
-		System.out.println("Default Values: ");
-		System.out.println("Country = " + f3.country + " \n Color = " + f3.color + " \n Stripes = " + f3.stripes
-				+ " \n Symbol = " + f3.hasSymbol + " \n Size = " + f3.size + "\n");
+		System.out.println("Default Values (USA Object): ");
+		System.out.println("Country = " + usaFlag.country + " \n Color = " + usaFlag.color + " \n Stripes = " + usaFlag.stripes
+				+ " \n Symbol = " + usaFlag.hasSymbol + " \n Size = " + usaFlag.size + "\n");
 
-		f3.country = "Japan";
-		f3.color = "White Red";
-		f3.stripes = 0;
-		f3.hasSymbol = true;
-		f3.size = 1.2;
-
-		System.out.println("Updated Values:");
-		System.out.println("Country = " + f3.country + " \n Color = " + f3.color + " \n stripes =" + f3.stripes
-				+ "\n Symbol= " + f3.hasSymbol + "\n Size = " + f3.size + "\n");
-
-		Flag f4 = new Flag();
-
-		System.out.println("Default Values: ");
-		System.out.println("Country = " + f4.country + " \n Color = " + f4.color + " \n Stripes = " + f4.stripes
-				+ " \n Symbol = " + f4.hasSymbol + " \n Size = " + f4.size + "\n");
-
-		f4.country = "Germany";
-		f4.color = "Black Red Yellow";
-		f4.stripes = 3;
-		f4.hasSymbol = false;
-		f4.size = 1.8;
+		usaFlag.country = "USA";
+		usaFlag.color = "Red White Blue";
+		usaFlag.stripes = 13;
+		usaFlag.hasSymbol = true;
+		usaFlag.size = 2.0;
 
 		System.out.println("Updated Values:");
-		System.out.println("Country = " + f4.country + " \n Color = " + f4.color + " \n stripes =" + f4.stripes
-				+ "\n Symbol= " + f4.hasSymbol + "\n Size = " + f4.size + "\n");
+		System.out.println("Country = " + usaFlag.country + " \n Color = " + usaFlag.color + " \n stripes =" + usaFlag.stripes
+				+ "\n Symbol= " + usaFlag.hasSymbol + "\n Size = " + usaFlag.size + "\n");
 
-		Flag f5 = new Flag();
+		
+		Flag japanFlag = new Flag();
 
-		System.out.println("Default Values: ");
-		System.out.println("Country = " + f5.country + " \n Color = " + f5.color + " \n Stripes = " + f5.stripes
-				+ " \n Symbol = " + f5.hasSymbol + " \n Size = " + f5.size + "\n");
+		System.out.println("Default Values (Japan Object): ");
+		System.out.println("Country = " + japanFlag.country + " \n Color = " + japanFlag.color + " \n Stripes = " + japanFlag.stripes
+				+ " \n Symbol = " + japanFlag.hasSymbol + " \n Size = " + japanFlag.size + "\n");
 
-		f5.country = "France";
-		f5.color = "Blue White Red";
-		f5.stripes = 3;
-		f5.hasSymbol = false;
-		f5.size = 1.7;
+		japanFlag.country = "Japan";
+		japanFlag.color = "White Red";
+		japanFlag.stripes = 0;
+		japanFlag.hasSymbol = true;
+		japanFlag.size = 1.2;
 
 		System.out.println("Updated Values:");
-		System.out.println("Country = " + f5.country + " \n Color = " + f5.color + " \n stripes =" + f5.stripes
-				+ "\n Symbol= " + f5.hasSymbol + "\n Size = " + f5.size + "\n");
+		System.out.println("Country = " + japanFlag.country + " \n Color = " + japanFlag.color + " \n stripes =" + japanFlag.stripes
+				+ "\n Symbol= " + japanFlag.hasSymbol + "\n Size = " + japanFlag.size + "\n");
+
+		
+		Flag germanyFlag = new Flag();
+
+		System.out.println("Default Values (Germany Object): ");
+		System.out.println("Country = " + germanyFlag.country + " \n Color = " + germanyFlag.color + " \n Stripes = " + germanyFlag.stripes
+				+ " \n Symbol = " + germanyFlag.hasSymbol + " \n Size = " + germanyFlag.size + "\n");
+
+		germanyFlag.country = "Germany";
+		germanyFlag.color = "Black Red Yellow";
+		germanyFlag.stripes = 3;
+		germanyFlag.hasSymbol = false;
+		germanyFlag.size = 1.8;
+
+		System.out.println("Updated Values:");
+		System.out.println("Country = " + germanyFlag.country + " \n Color = " + germanyFlag.color + " \n stripes =" + germanyFlag.stripes
+				+ "\n Symbol= " + germanyFlag.hasSymbol + "\n Size = " + germanyFlag.size + "\n");
+
+		
+		Flag franceFlag = new Flag();
+
+		System.out.println("Default Values (France Object): ");
+		System.out.println("Country = " + franceFlag.country + " \n Color = " + franceFlag.color + " \n Stripes = " + franceFlag.stripes
+				+ " \n Symbol = " + franceFlag.hasSymbol + " \n Size = " + franceFlag.size + "\n");
+
+		franceFlag.country = "France";
+		franceFlag.color = "Blue White Red";
+		franceFlag.stripes = 3;
+		franceFlag.hasSymbol = false;
+		franceFlag.size = 1.7;
+
+		System.out.println("Updated Values:");
+		System.out.println("Country = " + franceFlag.country + " \n Color = " + franceFlag.color + " \n stripes =" + franceFlag.stripes
+				+ "\n Symbol= " + franceFlag.hasSymbol + "\n Size = " + franceFlag.size + "\n");
 	}
 }
