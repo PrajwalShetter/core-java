@@ -140,3 +140,133 @@ System.out.println("Origin :"+fire5.origin);
 System.out.println("Controllable :"+fire5.controllable);
 System.out.println("Shape :"+fire5.shape);
 System.out.println("\n");
+
+Fire fire6 = new Fire();
+System.out.println("This is Sixth Fire \n");
+
+fire6.source = "Paper";
+fire6.fuel = "Dry Paper";
+fire6.duration = 2;
+fire6.smoke = true;
+fire6.location = "Office";
+fire6.spreadLevel = 2;
+fire6.heatOutput = 400;
+fire6.origin = "India";
+fire6.controllable = true;
+fire6.shape = "Small";
+
+System.out.println("Source :"+fire6.source);
+System.out.println("Fuel :"+fire6.fuel);
+System.out.println("Duration :"+fire6.duration);
+System.out.println("Smoke :"+fire6.smoke);
+System.out.println("Location :"+fire6.location);
+System.out.println("Spread :"+fire6.spreadLevel);
+System.out.println("Heat :"+fire6.heatOutput);
+System.out.println("Origin :"+fire6.origin);
+System.out.println("Controllable :"+fire6.controllable);
+System.out.println("Shape :"+fire6.shape);
+System.out.println("\n");
+
+Fire fire7 = new Fire();
+System.out.println("This is Seventh Fire \n");
+
+fire7.source = "Gas";
+fire7.fuel = "Methane";
+fire7.duration = 3;
+fire7.smoke = false;
+fire7.location = "Plant";
+fire7.spreadLevel = 3;
+fire7.heatOutput = 650;
+fire7.origin = "Russia";
+fire7.controllable = true;
+fire7.shape = "Jet";
+
+System.out.println("Source :"+fire7.source);
+System.out.println("Fuel :"+fire7.fuel);
+System.out.println("Duration :"+fire7.duration);
+System.out.println("Smoke :"+fire7.smoke);
+System.out.println("Location :"+fire7.location);
+System.out.println("Spread :"+fire7.spreadLevel);
+System.out.println("Heat :"+fire7.heatOutput);
+System.out.println("Origin :"+fire7.origin);
+System.out.println("Controllable :"+fire7.controllable);
+System.out.println("Shape :"+fire7.shape);
+System.out.println("\n");
+
+Fire fire8 = new Fire();
+System.out.println("This is Eighth Fire \n");
+
+fire8.source = "Wood";
+fire8.fuel = "Dry Logs";
+fire8.duration = 6;
+fire8.smoke = true;
+fire8.location = "Camp";
+fire8.spreadLevel = 2;
+fire8.heatOutput = 500;
+fire8.origin = "Canada";
+fire8.controllable = true;
+fire8.shape = "Campfire";
+
+System.out.println("Source :"+fire8.source);
+System.out.println("Fuel :"+fire8.fuel);
+System.out.println("Duration :"+fire8.duration);
+System.out.println("Smoke :"+fire8.smoke);
+System.out.println("Location :"+fire8.location);
+System.out.println("Spread :"+fire8.spreadLevel);
+System.out.println("Heat :"+fire8.heatOutput);
+System.out.println("Origin :"+fire8.origin);
+System.out.println("Controllable :"+fire8.controllable);
+System.out.println("Shape :"+fire8.shape);
+System.out.println("\n");
+
+Fire fire9 = new Fire();
+System.out.println("This is Ninth Fire \n");
+
+fire9.source = "Chemical";
+fire9.fuel = "Acid Reaction";
+fire9.duration = 4;
+fire9.smoke = true;
+fire9.location = "Lab";
+fire9.spreadLevel = 3;
+fire9.heatOutput = 750;
+fire9.origin = "Germany";
+fire9.controllable = false;
+fire9.shape = "Reactive";
+
+System.out.println("Source :"+fire9.source);
+System.out.println("Fuel :"+fire9.fuel);
+System.out.println("Duration :"+fire9.duration);
+System.out.println("Smoke :"+fire9.smoke);
+System.out.println("Location :"+fire9.location);
+System.out.println("Spread :"+fire9.spreadLevel);
+System.out.println("Heat :"+fire9.heatOutput);
+System.out.println("Origin :"+fire9.origin);
+System.out.println("Controllable :"+fire9.controllable);
+System.out.println("Shape :"+fire9.shape);
+System.out.println("\n");
+Fire fire10 = new Fire();
+System.out.println("This is Tenth Fire \n");
+
+fire10.source = "Electrical";
+fire10.fuel = "Circuit";
+fire10.duration = 3;
+fire10.smoke = true;
+fire10.location = "Server Room";
+fire10.spreadLevel = 4;
+fire10.heatOutput = 800;
+fire10.origin = "USA";
+fire10.controllable = false;
+fire10.shape = "Spark";
+
+System.out.println("Source :"+fire10.source);
+System.out.println("Fuel :"+fire10.fuel);
+System.out.println("Duration :"+fire10.duration);
+System.out.println("Smoke :"+fire10.smoke);
+System.out.println("Location :"+fire10.location);
+System.out.println("Spread :"+fire10.spreadLevel);
+System.out.println("Heat :"+fire10.heatOutput);
+System.out.println("Origin :"+fire10.origin);
+System.out.println("Controllable :"+fire10.controllable);
+System.out.println("Shape :"+fire10.shape);
+System.out.println("\n");
+}}
