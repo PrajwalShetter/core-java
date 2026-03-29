@@ -191,31 +191,7 @@ class ProjectorRunner {
 		System.out.println("Usage :" + p7.usage);
 		System.out.println("\n");
 
-		Projector p7 = new Projector();
-		System.out.println("This is Seventh Projector \n");
-
-		p7.model = "Optoma HD146X";
-		p7.displayType = "DLP";
-		p7.brightness = 3600;
-		p7.smart = false;
-		p7.connectivity = "HDMI";
-		p7.ports = 2;
-		p7.lampLife = 7000;
-		p7.origin = "USA";
-		p7.wireless = false;
-		p7.usage = "Home Theater";
-
-		System.out.println("Model :" + p7.model);
-		System.out.println("Display :" + p7.displayType);
-		System.out.println("Brightness :" + p7.brightness);
-		System.out.println("Smart :" + p7.smart);
-		System.out.println("Connectivity :" + p7.connectivity);
-		System.out.println("Ports :" + p7.ports);
-		System.out.println("LampLife :" + p7.lampLife);
-		System.out.println("Origin :" + p7.origin);
-		System.out.println("Wireless :" + p7.wireless);
-		System.out.println("Usage :" + p7.usage);
-		System.out.println("\n");
+		
 
 		Projector p9 = new Projector();
 		System.out.println("This is Ninth Projector \n");
