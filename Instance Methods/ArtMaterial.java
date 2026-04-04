@@ -27,6 +27,31 @@ class ArtMaterial {
         this.quantity = quantity;
     }
 
+    ArtMaterial(String name, double price, boolean isNonToxic) {
+        this.name = name;
+        this.price = price;
+        this.isNonToxic = isNonToxic;
+    }
+
+    ArtMaterial(double weight, int quantity) {
+        this.weight = weight;
+        this.quantity = quantity;
+    }
+
+    ArtMaterial(String material) {
+        this.material = material;
+    }
+
+    ArtMaterial(String type, String color) {
+        this.type = type;
+        this.color = color;
+    }
+
+    ArtMaterial(String brand, boolean isNonToxic) {
+        this.brand = brand;
+        this.isNonToxic = isNonToxic;
+    }
+
     void show() {
         System.out.println("Name: " + name);
         System.out.println("Type: " + type);
