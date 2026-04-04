@@ -12,8 +12,8 @@ class Stamp {
     String brand;
 
     Stamp(String type, String material, String shape, String color,
-          double size, double price, String inkColor, boolean isReusable,
-          String usageType, String brand) {
+            double size, double price, String inkColor, boolean isReusable,
+            String usageType, String brand) {
 
         this.type = type;
         this.material = material;
@@ -25,6 +25,31 @@ class Stamp {
         this.isReusable = isReusable;
         this.usageType = usageType;
         this.brand = brand;
+    }
+
+    Stamp(String type, double price, boolean isReusable) {
+        this.type = type;
+        this.price = price;
+        this.isReusable = isReusable;
+    }
+
+    Stamp(String material, String color) {
+        this.material = material;
+        this.color = color;
+    }
+
+    Stamp(double size, double price) {
+        this.size = size;
+        this.price = price;
+    }
+
+    Stamp(String brand, boolean isReusable) {
+        this.brand = brand;
+        this.isReusable = isReusable;
+    }
+
+    Stamp(String shape) {
+        this.shape = shape;
     }
 
     void show() {
