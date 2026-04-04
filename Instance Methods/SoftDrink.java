@@ -12,8 +12,8 @@ class SoftDrink {
     String expiryDate;
 
     SoftDrink(String name, String brand, String flavor, double quantity,
-              double price, String color, boolean isCarbonated,
-              String packagingType, double sugarContent, String expiryDate) {
+            double price, String color, boolean isCarbonated,
+            String packagingType, double sugarContent, String expiryDate) {
 
         this.name = name;
         this.brand = brand;
@@ -25,6 +25,31 @@ class SoftDrink {
         this.packagingType = packagingType;
         this.sugarContent = sugarContent;
         this.expiryDate = expiryDate;
+    }
+
+    SoftDrink(String name, double price, boolean isCarbonated) {
+        this.name = name;
+        this.price = price;
+        this.isCarbonated = isCarbonated;
+    }
+
+    SoftDrink(String brand, String flavor) {
+        this.brand = brand;
+        this.flavor = flavor;
+    }
+
+    SoftDrink(double quantity, double sugarContent) {
+        this.quantity = quantity;
+        this.sugarContent = sugarContent;
+    }
+
+    SoftDrink(String packagingType, boolean isCarbonated) {
+    this.packagingType = packagingType;
+    this.isCarbonated = isCarbonated;
+}
+
+    SoftDrink(String color) {
+        this.color = color;
     }
 
     void show() {
