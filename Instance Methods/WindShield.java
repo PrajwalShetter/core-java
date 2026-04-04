@@ -12,8 +12,8 @@ class WindShield {
     String durability;
 
     WindShield(String brand, String material, double size, double price,
-               String vehicleType, boolean isTinted, String color,
-               double thickness, String type, String durability) {
+            String vehicleType, boolean isTinted, String color,
+            double thickness, String type, String durability) {
 
         this.brand = brand;
         this.material = material;
@@ -25,6 +25,31 @@ class WindShield {
         this.thickness = thickness;
         this.type = type;
         this.durability = durability;
+    }
+
+    WindShield(String brand, double price, boolean isTinted) {
+        this.brand = brand;
+        this.price = price;
+        this.isTinted = isTinted;
+    }
+
+    WindShield(String material, String vehicleType) {
+        this.material = material;
+        this.vehicleType = vehicleType;
+    }
+
+    WindShield(double size, double thickness) {
+        this.size = size;
+        this.thickness = thickness;
+    }
+
+    WindShield(String type, boolean isTinted) {
+    this.type = type;
+    this.isTinted = isTinted;
+}
+
+    WindShield(String color) {
+        this.color = color;
     }
 
     void show() {
