@@ -12,8 +12,8 @@ class Rocket {
     String missionType;
 
     Rocket(String name, String fuelType, double weight, double height,
-           double payloadCapacity, double cost, String country,
-           boolean isReusable, int stages, String missionType) {
+            double payloadCapacity, double cost, String country,
+            boolean isReusable, int stages, String missionType) {
 
         this.name = name;
         this.fuelType = fuelType;
@@ -25,6 +25,31 @@ class Rocket {
         this.isReusable = isReusable;
         this.stages = stages;
         this.missionType = missionType;
+    }
+
+    Rocket(String name, double cost, boolean isReusable) {
+        this.name = name;
+        this.cost = cost;
+        this.isReusable = isReusable;
+    }
+
+    Rocket(String fuelType, String country) {
+        this.fuelType = fuelType;
+        this.country = country;
+    }
+
+    Rocket(double weight, double height) {
+        this.weight = weight;
+        this.height = height;
+    }
+
+    Rocket(int stages, String missionType) {
+        this.stages = stages;
+        this.missionType = missionType;
+    }
+
+    Rocket(String name) {
+        this.name = name;
     }
 
     void show() {
