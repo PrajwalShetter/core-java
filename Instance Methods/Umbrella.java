@@ -12,8 +12,8 @@ class Umbrella {
     String usageType;
 
     Umbrella(String brand, String color, double size, double price,
-             String type, String material, boolean isAutomatic,
-             int numberOfFolds, double weight, String usageType) {
+            String type, String material, boolean isAutomatic,
+            int numberOfFolds, double weight, String usageType) {
 
         this.brand = brand;
         this.color = color;
@@ -25,6 +25,31 @@ class Umbrella {
         this.numberOfFolds = numberOfFolds;
         this.weight = weight;
         this.usageType = usageType;
+    }
+
+    Umbrella(String brand, double price, boolean isAutomatic) {
+        this.brand = brand;
+        this.price = price;
+        this.isAutomatic = isAutomatic;
+    }
+
+    Umbrella(String color, String type) {
+        this.color = color;
+        this.type = type;
+    }
+
+    Umbrella(double size, double weight) {
+        this.size = size;
+        this.weight = weight;
+    }
+
+    Umbrella(int numberOfFolds, String usageType) {
+        this.numberOfFolds = numberOfFolds;
+        this.usageType = usageType;
+    }
+
+    Umbrella(String material) {
+        this.material = material;
     }
 
     void show() {
