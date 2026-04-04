@@ -12,8 +12,8 @@ class ThinkPad {
     double screenSize;
 
     ThinkPad(String model, String brand, String processor, int ram,
-             int storage, double price, String color,
-             double weight, String operatingSystem, double screenSize) {
+            int storage, double price, String color,
+            double weight, String operatingSystem, double screenSize) {
 
         this.model = model;
         this.brand = brand;
@@ -25,6 +25,31 @@ class ThinkPad {
         this.weight = weight;
         this.operatingSystem = operatingSystem;
         this.screenSize = screenSize;
+    }
+
+    ThinkPad(String model, double price, int ram) {
+        this.model = model;
+        this.price = price;
+        this.ram = ram;
+    }
+
+    ThinkPad(String brand, String processor) {
+        this.brand = brand;
+        this.processor = processor;
+    }
+
+    ThinkPad(int storage, double weight) {
+        this.storage = storage;
+        this.weight = weight;
+    }
+
+    ThinkPad(String operatingSystem, double screenSize) {
+        this.operatingSystem = operatingSystem;
+        this.screenSize = screenSize;
+    }
+
+    ThinkPad(String color) {
+        this.color = color;
     }
 
     void show() {
