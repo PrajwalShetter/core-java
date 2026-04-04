@@ -12,8 +12,8 @@ class Locker {
     String brand;
 
     Locker(String material, String type, double capacity, double weight,
-           double price, String color, boolean isDigital, String lockType,
-           int numberOfCompartments, String brand) {
+            double price, String color, boolean isDigital, String lockType,
+            int numberOfCompartments, String brand) {
 
         this.material = material;
         this.type = type;
@@ -25,6 +25,31 @@ class Locker {
         this.lockType = lockType;
         this.numberOfCompartments = numberOfCompartments;
         this.brand = brand;
+    }
+
+    Locker(String material, double price, boolean isDigital) {
+        this.material = material;
+        this.price = price;
+        this.isDigital = isDigital;
+    }
+
+    Locker(String type, String color) {
+        this.type = type;
+        this.color = color;
+    }
+
+    Locker(double capacity, double weight) {
+        this.capacity = capacity;
+        this.weight = weight;
+    }
+
+    Locker(int numberOfCompartments, String brand) {
+        this.numberOfCompartments = numberOfCompartments;
+        this.brand = brand;
+    }
+
+    Locker(String lockType) {
+        this.lockType = lockType;
     }
 
     void show() {
