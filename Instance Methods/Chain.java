@@ -26,6 +26,31 @@ class Chain {
         this.claspType = claspType;
         this.brand = brand;
     }
+	
+	Chain(String material, double price, boolean isAdjustable){
+    this.material = material;
+    this.price = price;
+    this.isAdjustable = isAdjustable;
+}
+
+Chain(String type, String color){
+    this.type = type;
+    this.color = color;
+}
+
+Chain(double length, double weight){
+    this.length = length;
+    this.weight = weight;
+}
+
+Chain(boolean isAdjustable, String design){
+    this.isAdjustable = isAdjustable;
+    this.design = design;
+}
+
+Chain(String claspType){
+    this.claspType = claspType;
+}
 
     void show() {
         System.out.println("Material: " + material);
