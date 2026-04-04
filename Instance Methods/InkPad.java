@@ -12,8 +12,8 @@ class InkPad {
     String usageType;
 
     InkPad(String brand, String color, String inkType, double size,
-           double price, boolean isRefillable, String shape,
-           String material, double weight, String usageType) {
+            double price, boolean isRefillable, String shape,
+            String material, double weight, String usageType) {
 
         this.brand = brand;
         this.color = color;
@@ -24,6 +24,31 @@ class InkPad {
         this.shape = shape;
         this.material = material;
         this.weight = weight;
+        this.usageType = usageType;
+    }
+
+    InkPad(String brand, double price, boolean isRefillable) {
+        this.brand = brand;
+        this.price = price;
+        this.isRefillable = isRefillable;
+    }
+
+    InkPad(String color, String inkType) {
+        this.color = color;
+        this.inkType = inkType;
+    }
+
+    InkPad(double size, double weight) {
+        this.size = size;
+        this.weight = weight;
+    }
+
+    InkPad(String shape, boolean isRefillable) {
+        this.shape = shape;
+        this.isRefillable = isRefillable;
+    }
+
+    InkPad(String usageType) {
         this.usageType = usageType;
     }
 
