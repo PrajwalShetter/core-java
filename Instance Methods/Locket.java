@@ -3,6 +3,8 @@ Declare below classes, then declare 10 instance variables, then init those varia
  then declare a non-static method, print all the instance variables using the method. Runner, Create 3 instances using parameterized 
  const , then invoke non-static method to display info. 
  Locket, Specs,Chain,Locker, Boomer,Rocket,Xerox, SoftDrink,InkPad,Stamp,Umbrella,ArtMaterial,Tyre,WindShield,ThinkPad
+ 
+ declare 5 over-loaded constructors from prev task, create instances using each constructor and invoke method display 
  */
  
  class Locket{
@@ -34,6 +36,24 @@ Declare below classes, then declare 10 instance variables, then init those varia
 		 
 	 }
 	 
+	
+Locket(String material, String color){
+    this.material = material;
+    this.color = color;
+}
+
+
+Locket(double price, String brand){
+    this.price = price;
+    this.brand = brand;
+}
+
+
+Locket(String shape){
+    this.shape = shape;
+}
+	 
+
 	 void show(){
 		 
 		System.out.println("Material :"+material);
