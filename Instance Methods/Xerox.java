@@ -27,6 +27,31 @@ class Xerox {
         this.usageType = usageType;
     }
 
+    Xerox(String brand, double price, boolean isWireless) {
+    this.brand = brand;
+    this.price = price;
+    this.isWireless = isWireless;
+}
+
+Xerox(String model, String type) {
+    this.model = model;
+    this.type = type;
+}
+
+Xerox(double speed, double weight) {
+    this.speed = speed;
+    this.weight = weight;
+}
+
+Xerox(String paperSize, boolean isWireless) {
+    this.paperSize = paperSize;
+    this.isWireless = isWireless;
+}
+
+Xerox(String colorMode) {
+    this.colorMode = colorMode;
+}
+
     void show() {
         System.out.println("Brand: " + brand);
         System.out.println("Model: " + model);

@@ -12,8 +12,8 @@ class Tyre {
     int durability;
 
     Tyre(String brand, String type, double size, double price,
-         String vehicleType, String material, boolean isTubeless,
-         double weight, String gripType, int durability) {
+            String vehicleType, String material, boolean isTubeless,
+            double weight, String gripType, int durability) {
 
         this.brand = brand;
         this.type = type;
@@ -25,6 +25,31 @@ class Tyre {
         this.weight = weight;
         this.gripType = gripType;
         this.durability = durability;
+    }
+
+    Tyre(String brand, double price, boolean isTubeless) {
+        this.brand = brand;
+        this.price = price;
+        this.isTubeless = isTubeless;
+    }
+
+    Tyre(String type, String vehicleType) {
+        this.type = type;
+        this.vehicleType = vehicleType;
+    }
+
+    Tyre(double size, double weight) {
+        this.size = size;
+        this.weight = weight;
+    }
+
+    Tyre(String material, int durability) {
+        this.material = material;
+        this.durability = durability;
+    }
+
+    Tyre(String gripType) {
+        this.gripType = gripType;
     }
 
     void show() {
