@@ -12,8 +12,8 @@ class Boomer {
     String brand;
 
     Boomer(String material, String color, double weight, double price,
-           String shape, String type, double range, boolean isReturning,
-           String design, String brand) {
+            String shape, String type, double range, boolean isReturning,
+            String design, String brand) {
 
         this.material = material;
         this.color = color;
@@ -25,6 +25,31 @@ class Boomer {
         this.isReturning = isReturning;
         this.design = design;
         this.brand = brand;
+    }
+
+    Boomer(String material, double price, boolean isReturning) {
+        this.material = material;
+        this.price = price;
+        this.isReturning = isReturning;
+    }
+
+    Boomer(String color, String type) {
+        this.color = color;
+        this.type = type;
+    }
+
+    Boomer(double weight, double range) {
+        this.weight = weight;
+        this.range = range;
+    }
+
+    Boomer(String brand, boolean isReturning) {
+        this.brand = brand;
+        this.isReturning = isReturning;
+    }
+
+    Boomer(String shape) {
+        this.shape = shape;
     }
 
     void show() {
