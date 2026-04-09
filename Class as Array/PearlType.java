@@ -1,0 +1,5 @@
+enum PearlType{
+	
+	NATURAL,CULTURED,ARTIFICIAL;
+	
+}
