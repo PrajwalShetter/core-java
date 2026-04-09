@@ -1,0 +1,5 @@
+enum IdProof{
+	
+	AADHAR_CARD,VOTER_ID, PAN_CARD,dRIVING_LICENCE;
+	
+}
