@@ -1,0 +1,3 @@
+enum Lang{
+	KANNADA, ENGLISH, HINDI,TELEUGU,TAMIL;
+}
