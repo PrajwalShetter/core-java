@@ -35,11 +35,13 @@ class WaterMelonStoreRunner{
 		store.display();
 		System.out.println("");
 		store.searchByLocation("mysore");
+		
 		System.out.println("");
 		WaterMelon ref = store.findByLocation("koappal");
 		if(ref != null){
 			ref.display();
 		}
+		
 		System.out.println("");
 		store.updatePriceByLocation(90.00,"vijayapura");
 	}
