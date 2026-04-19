@@ -1,0 +1,149 @@
+1) Explain Constructor chaining using this() with example
+soln:
+* constructor is a special method it used to initialize the instance variables.
+* The first line of the constructor always super() -- it invokes the parent class of the constructor
+
+Ex.
+class Person{
+ String name;
+ int age;
+
+Person(){
+super();
+this.name = name;
+this.age = age;
+
+}
+
+}
+
+
+2) Explain default values assigned to instance variables in java with example
+soln:
+* Default values of instance variables always depends upon the datatype of the variable
+* datatype --- default values
+   String  ---  null
+   integer --- 0
+   double  --- 0.0
+   Boolean --- false
+etc
+
+Ex.
+class Person{
+
+String name;
+int age;
+Boolean isMale;
+
+
+Person(){
+this.name = name;
+this.age= age;
+this.isMale = isMale;
+System.out.println("name :"+this.name);
+System.out.println("age :"+this.age);
+System.out.println("isMale :"+this.isMale);
+}
+
+public static void main(String[] args){
+
+Person person = new Person();
+
+}
+}
+
+3) Write a Java Program to to perform CRUD operations on an array:
+a)create array
+b) Read/display array
+c) update an array
+d)delete an array
+Soln:
+class Simple{
+
+public static void main(String[] args){
+//cretaing
+int[] arr = {1,2,3,4,5,6};
+//display
+System.out.println("array elemets are :"+arr);
+//updating
+int arr[3] = 22;
+int arr[2] = 66;
+
+System.out.println("array elemets are :"+arr);
+//delete
+
+
+}
+}
+
+4)Write a program to demonstrate a default constructor
+Soln:
+class Person{
+
+String name;
+int age;
+Boolean isMale;
+
+public static void main(String[] args){
+
+Person person = new Person();
+
+}
+}
+
+5)write a program using a parametrized constructor
+Soln:
+class Person{
+
+String name;
+int age;
+Boolean isMale;
+
+
+Person(String name, int age, boolean isMale){
+this.name = name;
+this.age= age;
+this.isMale = isMale;
+System.out.println("name :"+this.name);
+System.out.println("age :"+this.age);
+System.out.println("isMale :"+this.isMale);
+}
+
+public static void main(String[] args){
+
+Person person = new Person("Sagara",12, True);
+
+}
+}
+
+6)what is a constructor in java? who provides the default constructor
+Soln:
+* constructor  is special method.
+* constructor name is same as class name.
+* it is used to initialize the instance variables
+* JVM provides the default constructor
+
+7)can constructor have a return type? why?
+Soln:
+constructor doesn't have the return type
+reason:
+* it is only used for initializing the instance variables
+
+
+8) give a real world example of a has a relationship
+Soln:
+company
+  |
+  |
+ CEO
+  |
+  |
+Manager
+  |
+  |
+  HR
+  |
+  |
+Employee
+
+here, The flow shows the company relationship 
