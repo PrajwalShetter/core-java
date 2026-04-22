@@ -1,6 +1,7 @@
 /*
 Declare 10 things , declare two variables in each class
- Electricity,Document,Camera,Tag,TouchPad,Puzzle,Knife, Thread,DumbBell,Wood Declare sub classes for above . 
+ Electricity,Document,Camera,Tag,TouchPad,Puzzle,Knife, Thread,DumbBell,Wood 
+ Declare sub classes for above . 
  Design cosntructor Chaining . Create two instance of each class
  */
  
