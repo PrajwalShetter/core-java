@@ -1,0 +1,135 @@
+Q1.what is a class?
+soln:
+class is an blueprint of an object. it is used for declaration of methods and variables.
+
+Q2.Write a program to create a class car and display its properties
+soln:
+class car{
+
+void display(){
+ 
+String color = "Red";
+double price = 1500000.00;
+Boolean ecofriendly = true;
+int speed = 240;
+int passengerSeat = 4;
+
+System.out.println("color :"+color);
+System.out.println("price :"+price);
+System.out.println("ecofriendly :"+ecofriendly);
+System.out.println("speed :"+speed);
+System.out.println("passengerSeat :"+passengerSeat);
+
+
+public static void main(String[] args){
+
+display();
+}
+
+
+}
+}
+
+
+Q3.what is a method in java?
+soln:
+Method is a block of code. used to perform a particular task.
+
+
+Q4. what is method Overloading?
+soln:
+In a class two or more methods having a same name with different parameters is called Method Overloading.
+
+Q5. what is a constructor?
+soln:
+A constructor is a special method. it has same name as class name and used for initializing the instance variables.
+
+Q6. what are the types of constructors in java?
+soln:
+There are two types of constructor:
+1. default constructor
+2. user defined constructor
+
+
+Q7. what is this keyword in java?
+soln:
+this keyword refers to the same class. it is mainly used to initialize or invoke the methods and variables in the same class.
+
+Q8.write a program to demonstrating the use of this key?
+soln:
+class Car{
+
+String color ;
+double price ;
+boolean ecofriendly;
+int speed ;
+int passengerSeat;
+
+Car(String color, double price, boolean ecofriendly, int speed, int passengerSeat){
+this.color= color;
+this.price=price;
+this.ecofriendly= ecofriendly;
+this.speed= speed ;
+this.passenger=passenger;
+
+}
+
+void display(){
+ 
+System.out.println("color :"+this.color);
+System.out.println("price :"+this.price);
+System.out.println("ecofriendly :"+this.ecofriendly);
+System.out.println("speed :"+this.speed);
+System.out.println("passengerSeat :"+this.passengerSeat);
+
+
+
+}
+}
+
+class CarRunner{
+public static void main(){
+Car car1 = new Car("Red", 1500000.00, true,240, 4);
+car1.display;
+
+}
+
+}
+
+Q9. pattern
+1)
+square
+class Pattern{
+	
+	public static void main(String[] args){
+		
+		int i;
+		int j;
+		for(i=0; i<5; i++){
+			for(j=0; j<5; j++){
+				
+				System.out.print("* ");
+
+			}
+			System.out.println();
+		}
+	}
+}
+
+triangle:
+class Pattern{
+	
+	public static void main(String[] args){
+		
+		int i;
+		int j;
+		for(i=0; i<5; i++){
+			for(j=1; j<5; j++){
+				
+				System.out.print("* ");
+
+			}
+			System.out.println();
+		}
+	}
+}
