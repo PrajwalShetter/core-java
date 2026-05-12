@@ -180,6 +180,40 @@ public class Runner {
         System.out.println("salary :"+librarian3.getSalary());
         System.out.println("gender :"+librarian3.getGender());
         System.out.println("===============");
+        System.out.println("");
+
+        Rating rating1 = new Rating();
+        rating1.setUsername("manju");
+        rating1.setStars(3);
+        rating1.setReview("fare good");
+        System.out.println("to String :"+rating1.toString());
+        System.out.println("username :"+rating1.getUsername());
+        System.out.println("stars :"+rating1.getStars());
+        System.out.println("review :"+rating1.getReview());
+        System.out.println("===============");
+        Rating rating2 = new Rating();
+        rating2.setUsername("sushma");
+        rating2.setStars(5);
+        rating2.setReview("Excelent");
+        System.out.println("to String :"+rating2.toString());
+        System.out.println("username :"+rating2.getUsername());
+        System.out.println("stars :"+rating2.getStars());
+        System.out.println("review :"+rating2.getReview());
+        System.out.println("===============");
+        Rating rating3 = new Rating();
+        rating3.setUsername("rakesh");
+        rating3.setStars(2);
+        rating3.setReview("bad experience");
+        System.out.println("to String :"+rating3.toString());
+        System.out.println("username :"+rating3.getUsername());
+        System.out.println("stars :"+rating3.getStars());
+        System.out.println("review :"+rating3.getReview());
+        System.out.println("===============");
+        System.out.println("");
+
+
+        
+        
         
 
     }
