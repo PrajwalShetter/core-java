@@ -23,7 +23,7 @@ public class Inogration {
     }
 
     public String toString(){
-        return "Hi i am prajwal";
+        return "Date :"+date + "Activities :"+ activities + " chiefguest "+chifeGuest +" fund :"+ fond;
     }
 
     public String getDate() {

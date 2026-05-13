@@ -23,7 +23,7 @@ public class Branches {
     }
 
     public String toString(){
-        return "prajwal 1234";
+        return "Name :"+name + " govt :"+govt + " location :"+location + " sqrt :"+sqft;
     }
 
     public String getName(){
@@ -35,7 +35,6 @@ public class Branches {
     public String getLocation() {
         return location;
     }
-
     public double getSqft() {
         return sqft;
     }
