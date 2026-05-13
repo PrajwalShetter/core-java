@@ -23,7 +23,7 @@ public class Visitors {
     }
 
     public String toString(){
-        return "I am fine";
+        return "Name :"+name + "Age :"+age + "Number :"+number +" BorrowBook :"+borrowBooks;
     }
 
     public String getName() {
