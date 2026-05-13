@@ -34,6 +34,7 @@ public class Book {
 
     @Override
     public String toString(){
-        return "@134frhg";
+
+        return "name:"+name + " cost :"+cost + " noOfpages :"+noOfPages + " languages :"+language;
     }
 }
