@@ -18,7 +18,7 @@ public class Rating {
     }
 
     public String toString(){
-        return "I am rating the library";
+        return " username :"+username + "stars:"+stars + " review :"+review;
     }
 
     public String getUsername() {
