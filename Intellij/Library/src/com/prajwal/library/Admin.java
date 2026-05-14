@@ -42,4 +42,6 @@ public class Admin {
     public int getSalary() {
         return salary;
     }
+
+    hi
 }
