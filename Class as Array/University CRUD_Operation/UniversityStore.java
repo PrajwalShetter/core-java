@@ -1,0 +1,130 @@
+class UniversityStore {
+
+	University university[] = new University[20];
+	int index = 0;
+
+	void save(University university) {
+
+		if (university != null) {
+			if (this.index < this.university.length) {
+				this.university[index] = university;
+				System.out.println("University stored in the index :" + index);
+				index++;
+			}
+		} else {
+			System.out.println("University cannot be null");
+		}
+	}
+
+	University findByUniversityName(String name) {
+		System.out.println("findByUniversityName :" + name);
+		if (name != null) {
+			boolean found = false;
+			for (int i = 0; i < university.length; i++) {
+				if (university[i] != null && name.equals(university[i].name)) {
+					System.out.println("University name found at index :" + i);
+					found = true;
+					return university[i];
+				}
+			}
+			if (!found) {
+				System.out.println("University name is not found , plz try new name");
+				return null;
+			}
+		} else {
+			System.out.println("name cannot be null");
+			return null;
+		}
+
+		return null;
+
+	}
+
+	College findCollegeByName(String name) {
+
+		System.out.println("findCollegeByName :"+name);
+		if (name != null) {
+			int index = 0;
+			for (University arr : university) {
+				if (arr != null && arr.college != null) {
+					for (College arr1 : arr.college) {
+						if (arr1 != null && name.equals(arr1.name)) {
+							System.out.println("College is found");
+							index = 1;
+							return arr1;
+						}
+					}
+				}
+			}
+			if (index == 0) {
+				System.out.println("sry college is not found try with new name");
+			}
+		} else {
+			System.out.println("Name cannot be null");
+		}
+
+		return null;
+	}
+	
+	
+	
+	Department[] findAllDepartmentsByCollegeName(String collegeName){
+		System.out.println("findAllDepartmentsByCollegeName :"+collegeName);
+		
+		if(collegeName != null){
+			for(University  uarr : university){
+				if(uarr != null && uarr.college !=null){
+					for(College carr : uarr.college){
+						if(carr != null && collegeName.equals(carr.name)){
+							if(carr.department != null){
+								for(Department darr : carr.department){
+									if(darr != null){
+										System.out.println("Department are :"+darr.name);
+									}
+								}
+								return carr.department;
+							}
+						}
+					}
+				}
+			}
+			System.out.println("College is not found");
+		}
+		else{
+			System.out.println("College name cannot be null");
+		}
+			
+		return null;
+	}
+	
+	
+	Student findStudentByRollNo(int rollNo){
+		System.out.println("findStudentByRollNo :"+rollNo);
+		
+		if(rollNo != 0){
+			for(University uarr : university){
+				if(uarr != null && uarr.college != null){
+					for(College carr : uarr.college){
+						if(carr != null && carr.department != null){
+							for(Department darr : carr.department){
+								if(darr != null && darr.student != null){
+									for(Student sarr : darr.student){
+										if(sarr != null && rollNo == sarr.rollNo){
+											return sarr;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		else{
+			System.out.println("rollNo cannot be zero ");
+		}
+		
+		return null;
+	}
+
+}
