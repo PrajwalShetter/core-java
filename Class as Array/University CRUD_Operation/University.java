@@ -54,9 +54,9 @@ class University{
 	ViceChancellor viceChancellor;
 	College college[];
 	
-	void University(String name, VoiceChancellor voiceChancellor, College college[]){
+	 University(String name, ViceChancellor viceChancellor, College[] college){
 		this.name=name;
-		this.voiceChancellor = voiceChancellor;
+		this.viceChancellor = viceChancellor;
 		this.college = college;
 	}
 	
