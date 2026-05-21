@@ -4,7 +4,7 @@ class Principal{
 	String qualification;
 	int experience;
 	
-	void Principal(String name, String qualification, int experience){
+	 Principal(String name, String qualification, int experience){
 		this.name= name;
 		this.qualification = qualification;
 		this.experience = experience;
