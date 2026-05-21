@@ -5,7 +5,7 @@ class College{
 	Department department[];
 	int noOfStudents;
 	
-	void College(String name, Principal principal, Department[] department, int noOfStudents){
+	 College(String name, Principal principal, Department[] department, int noOfStudents){
 		this.name= name;
 		this.principal=principal;
 		this.department=department;
