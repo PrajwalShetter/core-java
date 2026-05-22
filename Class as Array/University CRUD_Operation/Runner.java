@@ -120,6 +120,27 @@ class Runner{
 		System.out.println("Student not found");
 	}
 	
+	
+	System.out.println("====================");
+	store.findNoOfStudentsByDepartmentName("AIML");
+	
+	System.out.println("=============");
+	University u= store.findByPrincipalName("Gopal");
+	if(u != null){
+		u.display();
 	}
 	
+	System.out.println("=========================");
+	Student[] s = store.findStudentsByMarksGreaterThan(40);
+	if(s != null){
+		for(Student st : s){
+			if(st != null){
+				st.display;
+			}
+			
+		}
+	}
+	
+	
+	}
 }
