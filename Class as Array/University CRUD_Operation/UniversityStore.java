@@ -126,5 +126,79 @@ class UniversityStore {
 		
 		return null;
 	}
+	
+	
+	int findNoOfStudentsByDepartmentName(String deptName){
+		
+		System.out.println("findNoOfStudentsByDepartmentName :"+deptName);
+		
+		if(deptName != null){
+			for(University uarr : university){
+				if(uarr != null && uarr.college !=null){
+					for(College carr : uarr.college){
+						if(carr != null && carr.department !=null){
+							for(Department darr : carr.department){
+								if(darr != null && deptName.equals(darr.name)){
+									System.out.println("No of students :"+carr.noOfStudents);
+									return 0;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		else{
+			System.out.println("department name cannot be null");
+		}
+		return 0;
+	}
+	
+	University findByPrincipalName(String principalName){
+		System.out.println("findByPrincipalName :"+principalName);
+		
+		if(principalName != null){
+			for(University uarr : university){
+				if(uarr != null && uarr.college != null){
+					for(College carr : uarr.college){
+						if(carr != null && carr.principal != null && principalName.equals(carr.principal.name)){
+							return uarr;
+						}
+					}
+				}
+			}
+		}
+		
+		return null;
+	}
+	
+	 Student[] findStudentsByMarksGreaterThan(int marks){
+		 System.out.println("findStudentsByMarksGreaterThan :"+marks);
+		 
+		 if(marks != 0){
+			 for(University uarr : university){
+				 if(uarr != null && uarr.college != null){
+					 for(College carr : uarr.college){
+						 if(carr != null && carr.department != null){
+							 for(Department darr : carr.department){
+								 if(darr != null && darr.student != null){
+									 for(Student sarr : darr.student){
+										 if(sarr != null && sarr.marks > marks){
+											 return sarr;
+										 }
+									 }
+								 }
+							 }
+						 }
+					 }
+				 }
+			 }
+		 }
+		 else{
+			 System.out.println("Marks cannot be zero");
+		 }
+		 
+		 return null;
+	 }
 
 }
