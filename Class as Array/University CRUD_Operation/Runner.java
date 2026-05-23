@@ -52,7 +52,7 @@ class Runner{
 	Student student15 = new Student("Revathi", 115, 92, address16);
 	Student[] students1 = {student1,student10,student11,student2,student12};
 	Student[] students2 = {student3,student8,student5,student13,student7};
-	Student[] students3 = {student4,student6,student9,student13,student14};
+	Student[] students3 = {student4,student6,student9,student15,student14};
 	
 	
 	Department department1 = new Department("Computer Science",hod5,students1,80);
@@ -130,16 +130,27 @@ class Runner{
 		u.display();
 	}
 	
-	System.out.println("=========================");
-	Student[] s = store.findStudentsByMarksGreaterThan(40);
-	if(s != null){
-		for(Student st : s){
-			if(st != null){
-				st.display;
-			}
+	// System.out.println("=========================");
+	// Student[] s = store.findStudentsByMarksGreaterThan(40);
+	// if(s != null){
+		// for(Student st : s){
+			// if(st != null){
+				// st.display();
+			// }
 			
-		}
-	}
+		// }
+	// }
+	
+	System.out.println("===========");
+	
+College cgg = store.findCollegeByHODName("Vignesh");
+if(cgg != null){
+	cgg.display();
+}
+	
+	System.out.println("==============");
+	String viceName = store.findViceChancellorNameByStudentRollNo(109);
+	System.out.println(viceName);
 	
 	
 	}
