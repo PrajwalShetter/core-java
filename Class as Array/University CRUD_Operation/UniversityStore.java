@@ -172,33 +172,109 @@ class UniversityStore {
 		return null;
 	}
 	
-	 Student[] findStudentsByMarksGreaterThan(int marks){
-		 System.out.println("findStudentsByMarksGreaterThan :"+marks);
-		 
-		 if(marks != 0){
-			 for(University uarr : university){
-				 if(uarr != null && uarr.college != null){
-					 for(College carr : uarr.college){
-						 if(carr != null && carr.department != null){
-							 for(Department darr : carr.department){
-								 if(darr != null && darr.student != null){
-									 for(Student sarr : darr.student){
-										 if(sarr != null && sarr.marks > marks){
-											 return sarr;
-										 }
-									 }
-								 }
+	// Student[] findStudentsByMarksGreaterThan(int marks){
+
+    // System.out.println( "findStudentsByMarksGreaterThan : " + marks);
+
+    // Student[] result = new Student[];
+    // int index = 0;
+
+    // if(marks != 0){
+
+        // for(University uarr : university){
+
+            // if(uarr != null && uarr.college != null){
+
+                // for(College carr : uarr.college){
+
+                    // if(carr != null && carr.department != null){
+
+                        // for(Department darr : carr.department){
+
+                            // if(darr != null && darr.student != null){
+
+                                // for(Student sarr : darr.student){
+
+                                    // if(sarr != null && sarr.marks > marks){
+
+                                        // result[index] = sarr;
+
+                                        // index++;
+                                    // }
+                                // }
+                            // }
+                        // }
+                    // }
+                // }
+            // }
+        // }
+    // }
+    // else{
+        // System.out.println(
+            // "Marks cannot be zero"
+        // );
+    // }
+
+    // return result;
+// }
+
+
+College findCollegeByHODName(String hodName){
+	 
+	 System.out.println("findCollegeByHODName :"+hodName);
+	 
+	 if(hodName != null){
+		 for(University uarr : university){
+			 if(uarr != null && uarr.college != null){
+				 for(College carr : uarr.college){
+					 if(carr != null && carr.department != null){
+						 for(Department darr : carr.department){
+							 if(darr != null && hodName.equals(darr.hod.name)){
+								 return carr;
 							 }
 						 }
 					 }
 				 }
 			 }
 		 }
-		 else{
-			 System.out.println("Marks cannot be zero");
-		 }
-		 
-		 return null;
 	 }
+	 else{
+		 System.out.println("Hod name cannot be null");
+	 }
+	 
+	 return null;
+}
+
+
+	String findViceChancellorNameByStudentRollNo(int rollNo){
+	
+	System.out.println("findViceChancellorNameByStudentRollNo :"+rollNo); 
+	
+	if(rollNo != 0){
+		for(University uarr : university){
+			if(uarr != null && uarr.college != null){
+				for(College carr : uarr.college){
+					if(carr != null && carr.department != null){
+						for(Department darr : carr.department){
+							if(darr != null && darr.student != null){
+								for(Student sarr : darr.student){
+									if(sarr !=  null && rollNo == sarr.rollNo){
+										return uarr.viceChancellor.name;
+										
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	else{
+		System.out.println("rollNo cannot be null");
+	}
+	
+	return null;
+}
 
 }
