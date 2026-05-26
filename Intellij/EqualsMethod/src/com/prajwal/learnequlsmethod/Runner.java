@@ -60,6 +60,16 @@ public class Runner {
         boolean citysame2= city1.equals(city3);
         System.out.println(citysame2);
 
+        System.out.println("=====================");
+        System.out.println("Sensor");
+        Sensor sensor1 = new Sensor("Motion Sensor", 30.5, 98.7, true, "Bosch");
+        Sensor sensor2 = new Sensor("Vission Sensor", 20.78, 12.90, true, "jackki");
+        Sensor sensor3 = new Sensor("Motion Sensor", 30.5, 98.7, true, "Bosch");
+
+        boolean sen= sensor1.equals(sensor2);
+        System.out.println(sen);
+        boolean sen2= sensor1.equals(sensor3);
+        System.out.println(sen);
 
 
     }
