@@ -71,6 +71,54 @@ public class Runner {
         boolean sen2= sensor1.equals(sensor3);
         System.out.println(sen);
 
+        System.out.println("==================");
+        System.out.println("IceCream");
+        Icecream ice1 = new Icecream("Chocolate", 99.0, "Amul", 2, true);
+        Icecream ice2 = new Icecream("Vanilla", 120.5, "Arun", 1, true);
+        Icecream ice3 = new Icecream("Chocolate", 99.0, "Amul", 2, true);
+
+        boolean ice4 = ice1.equals(ice2);
+        System.out.println(ice4);
+        boolean ice5 = ice1.equals(ice3);
+        System.out.println(ice5);
+
+        System.out.println("=======================");
+        System.out.println("Camera");
+
+        Camera camera1 = new Camera("Canon", 48, 55000.0, true, "Black");
+
+        Camera camera2 = new Camera("Sony", 64, 72000.0, true, "Silver");
+        Camera camera3 = new Camera("Canon", 48, 55000.0, true, "Black");
+
+        boolean camera4 = camera1.equals(camera2);
+        System.out.println(camera4);
+        boolean camera5= camera1.equals(camera3);
+        System.out.println(camera5);
+
+        System.out.println("======================");
+        System.out.println("Battery");
+        Battery battery1 = new Battery("Duracell", 5000, 12.5, true, 899.0);
+
+        Battery battery2 = new Battery("Amaron", 7000, 24.0, false, 1450.0);
+        Battery battery3 = new Battery("Duracell", 5000, 12.5, true, 899.0);
+
+        boolean batter4 = battery1.equals(battery2);
+        System.out.println(batter4);
+        boolean battery5=battery1.equals(battery3);
+        System.out.println(battery5);
+
+
+        System.out.println("======================");
+        System.out.println("TransportMode");
+        TransportMode transport1 = new TransportMode("Bus", 50, 25.0, true, "Diesel");
+
+        TransportMode transport2 = new TransportMode("Metro", 300, 40.0, true, "Electric");
+        TransportMode transport3 = new TransportMode("Bus", 50, 25.0, true, "Diesel");
+
+        boolean transport4 = transport1.equals(transport2);
+        System.out.println(transport4);
+        boolean transport5 = transport1.equals(transport3);
+        System.out.println(transport5);
 
     }
 }
