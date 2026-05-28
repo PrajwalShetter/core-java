@@ -20,8 +20,16 @@ public class Pizza {
     // private:
     // Accessible only inside the same class
 
-    public Pizza() {
+    protected Pizza() {
+
+        ingriedent();
+    }
+
+    private void ingriedent(){
+        System.out.println("I am private method");
 
     }
+
+
 }
 
