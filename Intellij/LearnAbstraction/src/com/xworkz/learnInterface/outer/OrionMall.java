@@ -15,7 +15,7 @@ public class OrianMall extends ElectricVehicle {
 
         if(vehiclePark != null){
 
-            
+
         }
     }
 }
