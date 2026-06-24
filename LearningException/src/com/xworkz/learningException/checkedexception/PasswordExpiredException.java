@@ -11,6 +11,5 @@ public class PasswordExpiredException extends Exception{
         this.expiryDate = expiryDate;
     }
 
-    public LocalDate getExpiryDate() { return expiryDate; }
-}
+
 }
