@@ -1,4 +1,4 @@
-package com.xworkz.learningException;
+package com.xworkz.learningException.runner;
 
 import com.xworkz.learningException.uncheckedexception.UnCheckedException;
 
