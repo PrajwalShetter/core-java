@@ -100,4 +100,15 @@ public class SignUpServicesImpl implements SignUpServices {
     public List<SignUpDto> retrieveData(){
         return signUpDaoImpl.retrieveData();
     }
+
+    @Override
+    public void getById(int id){
+
+signUpDaoImpl.getById(id);
+    }
+
+    @Override
+    public void getByIdAndName(int id, String name) {
+        signUpDaoImpl.getByIdAndName(id,name);
+    }
 }
