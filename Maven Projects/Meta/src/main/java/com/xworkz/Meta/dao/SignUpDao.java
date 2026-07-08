@@ -12,4 +12,8 @@ public interface SignUpDao {
 
      List<SignUpDto> retrieveData();
 
+     void getById(int id);
+
+     void getByIdAndName(int id, String name);
+
 }
