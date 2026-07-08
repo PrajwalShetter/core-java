@@ -12,4 +12,7 @@ void register(SignUpDto user);
 
     List<SignUpDto> retrieveData();
 
+    void getById(int id);
+
+    void getByIdAndName(int id, String name);
 }
