@@ -11,22 +11,22 @@ public class Runner {
 
         SignUpDto user = new SignUpDto();
 
-        user.setUserName("Prajwal");
-        user.setAge(23);
-        user.setMobileNo("9908765432");
-        user.setPassword("Praj@8769");
-        user.setConfirmPassword("Praj@8769");
-        user.setNationality("Indian");
+//        user.setUserName("Prajwal");
+//        user.setAge(23);
+//        user.setMobileNo("9908765432");
+//        user.setPassword("Praj@8769");
+//        user.setConfirmPassword("Praj@8769");
+//        user.setNationality("Indian");
 
         SignUpController controller = new SignUpController();
 
-        controller.register(user);
+        //controller.register(user);
 
-        controller.getAllData();
+       // controller.getAllData();
 
         List<SignUpDto> list = controller.retrieveData();
 
-        for (SignUpDto dto : list){
+        for (SignUpDto dto : list) {
 
             System.out.println(dto.getUserName());
             System.out.println(dto.getAge());
@@ -37,5 +37,12 @@ public class Runner {
             System.out.println("------------------");
         }
 
+//        System.out.println("calling getById in controller");
+//        controller.getById(4);
+
+        System.out.println("Calling getByIdAndName in controller");
+        controller.getByIdAndName(3,"prajwal");
     }
+
 }
+
