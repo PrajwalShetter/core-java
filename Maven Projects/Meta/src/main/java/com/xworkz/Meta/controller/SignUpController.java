@@ -32,4 +32,12 @@ public class SignUpController {
         return  signUpServices.retrieveData();
     }
 
+    public void getById(int id){
+        signUpServices.getById(id);
+    }
+
+    public void getByIdAndName(int id, String name){
+        signUpServices.getByIdAndName(id, name);
+    }
+
 }
