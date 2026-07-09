@@ -40,4 +40,11 @@ public class SignUpController {
         signUpServices.getByIdAndName(id, name);
     }
 
+    public void update(){
+        signUpServices.update();
+    }
+
+    public void delete(){
+        signUpServices.delete();
+    }
 }
