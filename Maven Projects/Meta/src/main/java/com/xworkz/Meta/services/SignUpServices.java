@@ -15,4 +15,8 @@ void register(SignUpDto user);
     void getById(int id);
 
     void getByIdAndName(int id, String name);
+
+    void update();
+
+     void delete();
 }
