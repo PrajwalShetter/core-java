@@ -42,6 +42,13 @@ public class Runner {
 
         System.out.println("Calling getByIdAndName in controller");
         controller.getByIdAndName(3,"prajwal");
+
+
+        System.out.println("calling update() in controller");
+        controller.update();
+
+        System.out.println("calling delete() in controller");
+        controller.delete();
     }
 
 }
