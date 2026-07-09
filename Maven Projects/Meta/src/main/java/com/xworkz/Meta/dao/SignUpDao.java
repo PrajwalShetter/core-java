@@ -16,4 +16,8 @@ public interface SignUpDao {
 
      void getByIdAndName(int id, String name);
 
+     void update();
+
+     void delete();
+
 }
