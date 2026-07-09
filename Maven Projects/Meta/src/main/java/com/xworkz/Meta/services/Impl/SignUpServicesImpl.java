@@ -111,4 +111,14 @@ signUpDaoImpl.getById(id);
     public void getByIdAndName(int id, String name) {
         signUpDaoImpl.getByIdAndName(id,name);
     }
+
+    @Override
+    public void update() {
+        signUpDaoImpl.update();
+    }
+
+    @Override
+    public void delete(){
+        signUpDaoImpl.delete();
+    }
 }
