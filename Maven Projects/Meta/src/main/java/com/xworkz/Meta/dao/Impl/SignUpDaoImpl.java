@@ -15,6 +15,8 @@ public class SignUpDaoImpl implements SignUpDao {
     String user = "root";
     String password = "Pajju#123";
 
+
+
     @Override
     public void register(SignUpDto user) {
 
@@ -239,6 +241,88 @@ public class SignUpDaoImpl implements SignUpDao {
                     connection.close();
                 }
             } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    @Override
+    public void update() {
+
+        System.out.println("update () invoked in DAO");
+
+        Connection connection = null;
+        PreparedStatement statement = null;
+
+        try{
+            forName("com.mysql.cj.jdbc.Driver");
+            connection = DriverManager.getConnection(url,user,password);
+
+            String sql = "UPDATE signup set userName = ? where id=?";
+
+            statement= connection.prepareStatement(sql);
+
+            statement.setString(1,"shankar");
+            statement.setInt(2,7);
+
+            int row = statement.executeUpdate();
+            if(row >0){
+                System.out.println("Update done" + row);
+            }
+            else {
+                System.out.println("Update failed");
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }finally {
+            try{
+                if (statement != null){
+                    statement.close();
+                }
+                if(connection != null){
+                    connection.close();
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    @Override
+    public void delete() {
+        System.out.println("delete method invoked in DAO");
+
+        Connection connection = null;
+        PreparedStatement statement = null;
+
+        try{
+            forName("com.mysql.cj.jdbc.Driver");
+
+            connection = DriverManager.getConnection(url,user,password);
+            String sql ="DELETE FROM signup WHERE id=?";
+            statement = connection.prepareStatement(sql);
+            statement.setInt(1,2);
+            int row = statement.executeUpdate();
+            if(row >0){
+                System.out.println("Deleted successfuly  : " + row);
+            }
+            else {
+                System.out.println("sory i couldn't find");
+            }
+
+        }catch (Exception e){
+            e.printStackTrace();
+        }finally {
+            try{
+                if(statement != null){
+                    statement.close();
+                }
+                if(connection != null){
+                    connection.close();
+                }
+
+            } catch (Exception e) {
                 e.printStackTrace();
             }
         }
