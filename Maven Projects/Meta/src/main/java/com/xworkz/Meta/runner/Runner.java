@@ -3,6 +3,7 @@ package com.xworkz.Meta.runner;
 import com.xworkz.Meta.controller.SignUpController;
 import com.xworkz.Meta.dto.SignUpDto;
 
+import java.sql.Connection;
 import java.util.List;
 
 public class Runner {
@@ -49,7 +50,13 @@ public class Runner {
 
         System.out.println("calling delete() in controller");
         controller.delete();
+
+        System.out.println("calling save() in controller");
+        controller.save(user);
     }
+
+
+
 
 }
 
