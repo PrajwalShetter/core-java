@@ -20,4 +20,8 @@ public interface SignUpDao {
 
      void delete();
 
+     void save(SignUpDto user);
+
+
+
 }
