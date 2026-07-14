@@ -47,4 +47,8 @@ public class SignUpController {
     public void delete(){
         signUpServices.delete();
     }
+
+    public void save(SignUpDto user){
+        signUpServices.save(user);
+    }
 }
