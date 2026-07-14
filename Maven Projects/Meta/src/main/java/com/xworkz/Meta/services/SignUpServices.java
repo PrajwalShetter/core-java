@@ -19,4 +19,6 @@ void register(SignUpDto user);
     void update();
 
      void delete();
+
+     void save(SignUpDto user);
 }
