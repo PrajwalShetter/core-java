@@ -63,19 +63,26 @@ public class SignUpDaoImpl implements SignUpDao {
     public void getAllData(){
         System.out.println("DAO getAlldata() invoked");
 
-        try {
+        try (Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/meta_db",
+                "root",
+                "Pajju#123"
+        );
+        Statement statement = connection.createStatement();
+             ResultSet resultSet = statement.executeQuery("SELECT  * from signup");
+
+        ){
+
             forName("com.mysql.cj.jdbc.Driver");
 
-            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/meta_db",
-                    "root",
-                    "Pajju#123"
-            );
+//            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/meta_db",
+//                    "root",
+//                    "Pajju#123"
+//            );
 
+//            Statement statement = connection.createStatement();
+//            String sql = "SELECT  * from signup";
 
-            Statement statement = connection.createStatement();
-            String sql = "SELECT  * from signup";
-
-            ResultSet resultSet = statement.executeQuery(sql);
+//            ResultSet resultSet = statement.executeQuery(sql);
 
             while (resultSet.next()){
                 System.out.println("-------------------------------");
@@ -87,9 +94,10 @@ public class SignUpDaoImpl implements SignUpDao {
                 System.out.println("Nationality : " + resultSet.getString("nationality"));
             }
 
-            resultSet.close();
-            statement.close();
-            connection.close();
+//            resultSet.close();
+//            statement.close();
+//            connection.close();
+
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -327,4 +335,56 @@ public class SignUpDaoImpl implements SignUpDao {
             }
         }
     }
+
+    public void save(SignUpDto user) {
+
+        System.out.println("DAO register() Invoked");
+
+        try {
+
+            forName("com.mysql.cj.jdbc.Driver");
+            System.out.println("Driver Loaded");
+
+            Connection connection = DriverManager.getConnection(
+                    "jdbc:mysql://localhost:3306/meta_db",
+                    "root",
+                    "Pajju#123"
+            );
+
+            System.out.println("Database Connected");
+
+            String sql = "INSERT INTO signup(username,age,mobile_no,password,nationality) VALUES(?,?,?,?,?)";
+            PreparedStatement statement = connection.prepareStatement(sql);
+
+            statement.setString(1, "xyz");
+            statement.setInt(2, 23);
+            statement.setString(3, "9902178976");
+            statement.setString(4, "Pajju#908");
+            statement.setString(5, "Indian");
+            statement.addBatch();
+
+            statement.setString(1, "pqr");
+            statement.setInt(2, 23);
+            statement.setString(3, "778906543");
+            statement.setString(4, "kalu#908");
+            statement.setString(5, "Indian");
+            statement.addBatch();
+
+
+            System.out.println(sql);
+
+            statement.executeBatch();
+
+            System.out.println("Data Inserted Successfully");
+
+            statement.close();
+            connection.close();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
+
+
 }
