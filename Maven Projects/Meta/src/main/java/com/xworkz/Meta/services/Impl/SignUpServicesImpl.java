@@ -121,4 +121,9 @@ signUpDaoImpl.getById(id);
     public void delete(){
         signUpDaoImpl.delete();
     }
+
+    @Override
+    public void save(SignUpDto user) {
+        signUpDaoImpl.save(user);
+    }
 }
