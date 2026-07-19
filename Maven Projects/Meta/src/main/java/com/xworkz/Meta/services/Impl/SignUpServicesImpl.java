@@ -11,7 +11,7 @@ public class SignUpServicesImpl implements SignUpServices {
     SignUpDaoImpl signUpDaoImpl = new SignUpDaoImpl();
 
     @Override
-    public void register(SignUpDto user) {
+    public boolean register(SignUpDto user) {
 
         boolean isUsernameValid = false;
         boolean isAgeValid = false;
@@ -58,7 +58,7 @@ public class SignUpServicesImpl implements SignUpServices {
 
         } else {
             System.out.println("User Object is Null");
-            return;
+
         }
 
         System.out.println("Username Valid : " + isUsernameValid);
@@ -77,14 +77,14 @@ public class SignUpServicesImpl implements SignUpServices {
 
             System.out.println("All Validations Passed");
 
-            signUpDaoImpl.register(user);
+            return signUpDaoImpl.register(user);
 
         } else {
 
             System.out.println("Validation Failed");
 
         }
-
+        return false;
     }
 
     @Override
@@ -125,5 +125,10 @@ signUpDaoImpl.getById(id);
     @Override
     public void save(SignUpDto user) {
         signUpDaoImpl.save(user);
+    }
+
+    @Override
+    public int droptTable() {
+        return signUpDaoImpl.dropTabel();
     }
 }
