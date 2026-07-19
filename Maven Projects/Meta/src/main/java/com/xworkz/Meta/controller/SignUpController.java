@@ -10,11 +10,11 @@ public class SignUpController {
 
     SignUpServices signUpServices = new SignUpServicesImpl();
 
-    public void register(SignUpDto user) {
+    public boolean register(SignUpDto user) {
 
         System.out.println("Controller register() Invoked");
 
-        signUpServices.register(user);
+        return signUpServices.register(user);
 
     }
 
@@ -50,5 +50,9 @@ public class SignUpController {
 
     public void save(SignUpDto user){
         signUpServices.save(user);
+    }
+
+    public int dropTable(){
+        return signUpServices.droptTable();
     }
 }
