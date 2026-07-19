@@ -18,8 +18,10 @@ public class SignUpDaoImpl implements SignUpDao {
 
 
     @Override
-    public void register(SignUpDto user) {
+    public boolean register(SignUpDto user) {
 
+        Connection connection = null;
+        Statement statement = null;
         System.out.println("DAO register() Invoked");
 
         try {
@@ -27,7 +29,7 @@ public class SignUpDaoImpl implements SignUpDao {
             forName("com.mysql.cj.jdbc.Driver");
             System.out.println("Driver Loaded");
 
-            Connection connection = DriverManager.getConnection(
+             connection = DriverManager.getConnection(
                     "jdbc:mysql://localhost:3306/meta_db",
                     "root",
                     "Pajju#123"
@@ -35,7 +37,8 @@ public class SignUpDaoImpl implements SignUpDao {
 
             System.out.println("Database Connected");
 
-            Statement statement = connection.createStatement();
+            connection.setAutoCommit(false);
+             statement = connection.createStatement();
 
             String sql = "INSERT INTO signup(username,age,mobile_no,password,nationality) VALUES('"
                     + user.getUserName() + "',"
@@ -46,16 +49,27 @@ public class SignUpDaoImpl implements SignUpDao {
 
             System.out.println(sql);
 
-            statement.execute(sql);
+            boolean save = statement.execute(sql);
+            connection.commit();
+            return save;
 
-            System.out.println("Data Inserted Successfully");
-
-            statement.close();
-            connection.close();
 
         } catch (Exception e) {
             e.printStackTrace();
         }
+        finally{
+            try{
+                if(statement !=null){
+                    statement.close();
+                }
+                if(connection !=null){
+                    connection.close();
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return false;
 
     }
 
@@ -71,6 +85,7 @@ public class SignUpDaoImpl implements SignUpDao {
              ResultSet resultSet = statement.executeQuery("SELECT  * from signup");
 
         ){
+
 
             forName("com.mysql.cj.jdbc.Driver");
 
@@ -384,6 +399,26 @@ public class SignUpDaoImpl implements SignUpDao {
             e.printStackTrace();
         }
 
+    }
+
+    @Override
+    public int dropTabel() {
+
+        try(Connection connection = DriverManager.getConnection(url,user,password);
+        PreparedStatement statement = connection.prepareStatement("drop table signup"))
+
+        {
+            forName("com.mysql.cj.jdbc.Driver");
+            int row = statement.executeUpdate();
+            if(row >0){
+                return 1;
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return 0;
     }
 
 
