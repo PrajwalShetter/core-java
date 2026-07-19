@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface SignUpDao {
 
-    void register(SignUpDto user);
+    boolean register(SignUpDto user);
 
     void getAllData();
 
@@ -22,6 +22,6 @@ public interface SignUpDao {
 
      void save(SignUpDto user);
 
-
+    int dropTabel();
 
 }
