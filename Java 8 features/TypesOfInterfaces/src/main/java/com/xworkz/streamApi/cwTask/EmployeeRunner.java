@@ -191,6 +191,51 @@ public class EmployeeRunner {
         System.out.println("less then 700000 :"+partitioned.get(false));
 
 
+        System.out.println("Print Average age of Male and Female Employees in the organisation.");
+        employeeList.stream()
+                .collect(Collectors.groupingBy(EmployeeDto::getGender,Collectors.averagingInt(EmployeeDto::getAge)))
+                .forEach((gender,age)-> System.out.println(gender +" "+age));
+
+        System.out.println("\n");
+        System.out.println("Print Average age of Male and Female Employees in each department.");
+        employeeList.stream()
+                .collect(Collectors.groupingBy(EmployeeDto::getDepartment,
+                        Collectors.groupingBy(EmployeeDto::getGender,Collectors.averagingInt(EmployeeDto::getAge))))
+                .forEach((department,genderMap)->{
+                    System.out.println(department);
+                    genderMap.forEach((gender,age)->
+                    {
+                        System.out.println(gender +" "+age);
+                    });
+                });
+
+        System.out.println("\n");
+        System.out.println(" To get a list of employees from each department whose salary is greater than the average salary of their department.");
+        Map<String,Double> avgSalary = employeeList.stream()
+                .collect(Collectors.groupingBy(EmployeeDto::getDepartment,Collectors.averagingDouble(EmployeeDto::getSalary)));
+        avgSalary.forEach((department,avgS)->{
+            System.out.println(department +"="+ avgS);
+        });
+
+        employeeList.stream()
+                .filter(e->e.getSalary()> avgSalary.get(e.getDepartment()))
+                .collect(Collectors.groupingBy(EmployeeDto::getDepartment))
+                .forEach((department,employee)->
+                {
+                    System.out.println(department);
+
+                    employee.forEach((employe)->
+                    {
+                        System.out.println(employe);
+                    });
+                });
+
+
+
+
+
+
+
 
     }
 }
