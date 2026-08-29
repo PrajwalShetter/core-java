@@ -14,6 +14,7 @@ public class Runner {
         };
         addition.add(2,9);
 
+
         Substraction substraction =(a,b) ->{
             System.out.println(a-b);
         };
